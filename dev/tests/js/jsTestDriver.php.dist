@@ -1,0 +1,58 @@
+<?php
+/**
+ * Returns an array containing the configuration used to generate the JsTestDriver configuration
+ * file that gets used by JsTestDriver when it executes the Javascript unit tests.
+ *
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @copyright   Copyright (c) 2014 X.commerce, Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+ * @return array
+ */
+return array(
+    'server' => 'http://localhost:9876',
+    'load' => array(
+        '/dev/tests/js/framework',
+        '/lib/web/mage/webapi.js',
+        '/lib/web/mage/validation/validation.js',
+        '/lib/web/jquery/jquery.tmpl.min.js',
+        '/app/code/Magento/DesignEditor/view/adminhtml/web/js/infinitescroll.js',
+        '/lib/web/jquery/jstree/jquery.jstree.js',
+        '/lib/web/jquery/jquery-ui-timepicker-addon.js',
+        '/lib/web/mage/cookies.js',
+        '/lib/web/mage/calendar.js',
+        '/lib/web/mage/loader_old.js',
+        '/lib/web/mage/edit-trigger.js',
+        '/lib/web/mage/translate-inline.js',
+        '/lib/web/mage/translate-inline-vde.js',
+        '/lib/web/mage/backend/form.js',
+        '/lib/web/mage/backend/button.js',
+        '/lib/web/mage/backend/tabs.js',
+        '/lib/web/mage/backend/menu.js',
+        '/lib/web/mage/backend/suggest.js',
+        '/lib/web/mage/backend/tree-suggest.js',
+        '/lib/web/mage/gallery.js',
+        '/lib/web/mage/gallery-fullscreen.js',
+        '/lib/web/mage/zoom.js',
+        '/lib/internal/Magento/Framework/RequireJs/paths-updater.js',
+    ),
+    'test' => array('/dev/tests/js/testsuite'),
+    'JsTestDriver' => '{{path_to_jstestdriver_jar}}'
+);
